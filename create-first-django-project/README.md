@@ -14,7 +14,7 @@ $ pip install django
 ## 新增Django project
 建立Django project 
 ```
-$ django.admin.py startproject behappycc_blog
+$ django.admin.py startproject pycone_blog
 ```
 啟動Django server, 將web應用程式運行
 ```
@@ -30,7 +30,7 @@ $ python3 manage.py runserver 0.0.0.0:8000
 ```
 $ python3 manage.py startapp blog
 ```
-將剛剛建立blog app, 安裝於project當中, 修改behappycc_blog/settings.py中的 INSTALLED_APPS
+將剛剛建立blog app, 安裝於project當中, 修改pycone_blog/settings.py中的 INSTALLED_APPS
 ```
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 ## 修改Project URL配置
 ```
 URL配置是為了告訴瀏覽器當使用者輸入網址之後, 程式要用哪一段邏輯處理
-在behappycc_blog/behappycc_blog修改urls.py, include函式可以將app的URL配置加入project的URL配置當中,
+在pycone_blog/pycone_blog修改urls.py, include函式可以將app的URL配置加入project的URL配置當中,
 當然也可以直接寫在project配置當中, 但是如果當程式日益增大時, 不容易管理  
 `from django.conf.urls import include` import include函式  
 `url(r'^', include('blog.urls'))`  將app的URL配置加入project的URL配置當中
@@ -63,7 +63,7 @@ urlpatterns = [
 
 ## 新增blog view
 Django view會負責將資料回應給使用者, 之後課程中會講解Django MTV架構(model, template與view)
-在behappycc_blog/blog/views.py新增
+在pycone_blog/blog/views.py新增
 ```
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -73,7 +73,7 @@ def response_hello_world(request):
     return HttpResponse('Hello, World!')
 ```
 
-在behappycc_blog/blog當中新增urls.py
+在pycone_blog/blog當中新增urls.py
 ```
 from django.conf.urls import url
 from blog import views

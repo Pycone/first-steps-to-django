@@ -1,4 +1,4 @@
-"""behappycc_blog URL Configuration
+"""pycone_blog URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.10/topics/http/urls/
@@ -19,5 +19,5 @@ from django.conf.urls import include
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    # url(r'^', include('blog.urls')),
+    url(r'^', include('blog.urls')),
 ]
