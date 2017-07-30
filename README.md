@@ -1,14 +1,15 @@
 # Django起步走(first-steps-to-django)
+給初學者的 Django入門教學, 由淺入深學習 Django。帶領你一步一步認識 Django。  
 by [Pycone 松果城市](http://pycone.com) x ccClub
 
 
 ![](static/images/first-steps-to-django.png)  
-Django入門課程  
-每一個範例皆是可以執行的程式
+
 
 ## 課程單元
 1. [建立第一個Django project](create-first-django-project)
 2. [建立部落格文章model](create-blog-post-model)
+3. [建立部落格文章template](create-blog-post-template)
 
 ## 版權許可（License）
 本書採用創用CC授權 "姓名標示─非商業性─相同方式分享(BY-NC-SA)" 授權。
